@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+HTML {
+  height: 100%;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th{
+  text-align: left;
+}
+
+th{
+  background-color: #dedede;
+}
+
+table{
+  width: 100%;
+}
+
+.accountdetails{
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  margin: 20px;
+  padding: 0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: midnightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size:32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+table.profile {
+  width: 75%;
+  margin: 0 auto;
+}
+
+td{
+  margin: 50px;
+  font-size: 25px;
+}
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+ul.no-bullets {
+  margin-left: 20px;
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  height: 100%;
+}
+
+.navbar a {
+  font-size: 16px;
+  position: relative;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before{
+  content: '';
+  position:absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.navbar a:hover::before{
+  width:100%
+}
+
+  body {
+    padding-top: 100px;
+  }
+
+form {
+    width: 400px
+    padding: 40px;
+}
+
+input[type="text"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    align-self: center;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    font-size: 16px;
+    padding: 10px;
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border: 1px solid midnightblue;
+    border-color: midnightblue;
+    color: midnightblue;
+}
+
+@media screen and (max-width: 1200px) {
+  td,th {
+    font-size: 18px;
+  }
+  .navbar a{
+    font-size: 14px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+body {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  td,th {
+    font-size: 14px;
+  }
+  .navbar a{
+      font-size: 12px;
+  }
+  body {
+    padding-top: 150px;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  td,th {
+    font-size: 12px;
+  }
+  .navbar a{
+    font-size: 5px;
+  }
+  body {
+    padding-top: 150px;
+  }
+}
+}
+
+.colors{
+  width: 100%;
+  height: 100vh;
+  border-top: 25vh solid gold;
+  border-bottom: 25vh solid blue;
+  border-left: 25vh solid red;
+  border-right: 25vh solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+
